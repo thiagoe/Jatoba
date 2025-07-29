@@ -1,0 +1,106 @@
+2025-07-29 15:42:58,338 - werkzeug - WARNING -  * Debugger is active!
+2025-07-29 15:43:18,613 - werkzeug - WARNING -  * Debugger is active!
+2025-07-29 15:43:28,892 - werkzeug - WARNING -  * Debugger is active!
+2025-07-29 15:45:48,063 - werkzeug - WARNING -  * Debugger is active!
+2025-07-29 15:46:56,696 - app - INFO - Requisição recebida: GET http://127.0.0.1:5000/manufacturers de 127.0.0.1
+2025-07-29 15:46:56,697 - app - INFO - Requisição finalizada: GET http://127.0.0.1:5000/manufacturers com status 308
+2025-07-29 15:50:21,524 - app - INFO - Requisição recebida: GET http://127.0.0.1:5000/manufacturers/ de 127.0.0.1
+2025-07-29 15:50:21,525 - api_jatoba.manufacturers - INFO - Iniciando listagem de todos os fabricantes.
+2025-07-29 15:50:21,529 - api_jatoba.database - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2025-07-29 15:50:21,531 - api_jatoba.manufacturers - INFO - Listados 3 fabricantes.
+2025-07-29 15:50:21,531 - api_jatoba.database - INFO - Conexão ao banco de dados fechada com sucesso.
+2025-07-29 15:50:21,532 - app - INFO - Requisição finalizada: GET http://127.0.0.1:5000/manufacturers/ com status 200
+2025-07-29 15:56:18,556 - app - INFO - Requisição recebida: GET http://127.0.0.1:5000/ de 127.0.0.1
+2025-07-29 15:56:18,556 - api_jatoba - INFO - Acessada rota raiz.
+2025-07-29 15:56:18,557 - app - INFO - Requisição finalizada: GET http://127.0.0.1:5000/ com status 200
+2025-07-29 15:59:57,728 - app - INFO - Requisição recebida: GET http://127.0.0.1:5000/ de 127.0.0.1
+2025-07-29 15:59:57,729 - api_jatoba - INFO - Acessada rota raiz.
+2025-07-29 15:59:57,729 - app - INFO - Requisição finalizada: GET http://127.0.0.1:5000/ com status 200
+2025-07-29 16:01:14,770 - app - INFO - Requisição recebida: POST http://127.0.0.1:5000/upload de 127.0.0.1
+2025-07-29 16:01:14,773 - api_jatoba - INFO - Requisição de upload genérico iniciada.
+2025-07-29 16:01:14,776 - api_jatoba - INFO - Upload genérico de 'arquivo.txt' bem-sucedido. Salvo em: /var/www/html/jatoba/uploads/arquivo.txt
+2025-07-29 16:01:14,776 - app - INFO - Requisição finalizada: POST http://127.0.0.1:5000/upload com status 201
+2025-07-29 16:02:18,278 - werkzeug - WARNING -  * Debugger is active!
+2025-07-29 16:02:23,493 - werkzeug - WARNING -  * Debugger is active!
+2025-07-29 16:03:54,546 - app - INFO - Requisição recebida: DELETE http://127.0.0.1:5000/upload/arquivo.txt de 127.0.0.1
+2025-07-29 16:03:54,546 - api_jatoba - INFO - Requisição de exclusão de arquivo genérico iniciada para: arquivo.txt
+2025-07-29 16:03:54,546 - api_jatoba - INFO - Arquivo genérico 'arquivo.txt' deletado com sucesso do sistema de arquivos.
+2025-07-29 16:03:54,547 - app - INFO - Requisição finalizada: DELETE http://127.0.0.1:5000/upload/arquivo.txt com status 200
+2025-07-29 16:04:58,766 - app - INFO - Requisição recebida: GET http://127.0.0.1:5000/manufacturers/1 de 127.0.0.1
+2025-07-29 16:04:58,766 - api_jatoba.manufacturers - INFO - Buscando fabricante com ID: 1.
+2025-07-29 16:04:58,770 - api_jatoba.database - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2025-07-29 16:04:58,771 - api_jatoba.manufacturers - INFO - Fabricante ID 1 encontrado: TechCorp S.A..
+2025-07-29 16:04:58,772 - api_jatoba.database - INFO - Conexão ao banco de dados fechada com sucesso.
+2025-07-29 16:04:58,772 - app - INFO - Requisição finalizada: GET http://127.0.0.1:5000/manufacturers/1 com status 200
+2025-07-29 16:05:07,640 - app - INFO - Requisição recebida: GET http://127.0.0.1:5000/manufacturers/1 de 127.0.0.1
+2025-07-29 16:05:07,640 - api_jatoba.manufacturers - INFO - Buscando fabricante com ID: 1.
+2025-07-29 16:05:07,645 - api_jatoba.database - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2025-07-29 16:05:07,646 - api_jatoba.manufacturers - INFO - Fabricante ID 1 encontrado: TechCorp S.A..
+2025-07-29 16:05:07,647 - api_jatoba.database - INFO - Conexão ao banco de dados fechada com sucesso.
+2025-07-29 16:05:07,647 - app - INFO - Requisição finalizada: GET http://127.0.0.1:5000/manufacturers/1 com status 200
+2025-07-29 16:05:10,404 - app - INFO - Requisição recebida: GET http://127.0.0.1:5000/manufacturers/2 de 127.0.0.1
+2025-07-29 16:05:10,404 - api_jatoba.manufacturers - INFO - Buscando fabricante com ID: 2.
+2025-07-29 16:05:10,409 - api_jatoba.database - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2025-07-29 16:05:10,410 - api_jatoba.manufacturers - INFO - Fabricante ID 2 encontrado: Global Mfr. Ltda..
+2025-07-29 16:05:10,411 - api_jatoba.database - INFO - Conexão ao banco de dados fechada com sucesso.
+2025-07-29 16:05:10,411 - app - INFO - Requisição finalizada: GET http://127.0.0.1:5000/manufacturers/2 com status 200
+2025-07-29 16:05:11,980 - app - INFO - Requisição recebida: GET http://127.0.0.1:5000/manufacturers/3 de 127.0.0.1
+2025-07-29 16:05:11,980 - api_jatoba.manufacturers - INFO - Buscando fabricante com ID: 3.
+2025-07-29 16:05:11,997 - api_jatoba.database - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2025-07-29 16:05:11,999 - api_jatoba.manufacturers - INFO - Fabricante ID 3 encontrado: InnoMech Ind..
+2025-07-29 16:05:12,000 - api_jatoba.database - INFO - Conexão ao banco de dados fechada com sucesso.
+2025-07-29 16:05:12,000 - app - INFO - Requisição finalizada: GET http://127.0.0.1:5000/manufacturers/3 com status 200
+2025-07-29 16:05:28,691 - app - INFO - Requisição recebida: POST http://127.0.0.1:5000/manufacturers/ de 127.0.0.1
+2025-07-29 16:05:28,692 - api_jatoba.manufacturers - INFO - Tentando criar novo fabricante: Nova Indústria.
+2025-07-29 16:05:28,696 - api_jatoba.database - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2025-07-29 16:05:28,789 - api_jatoba.manufacturers - INFO - Fabricante 'Nova Indústria' criado com sucesso, ID: 4.
+2025-07-29 16:05:28,790 - api_jatoba.database - INFO - Conexão ao banco de dados fechada com sucesso.
+2025-07-29 16:05:28,790 - app - INFO - Requisição finalizada: POST http://127.0.0.1:5000/manufacturers/ com status 201
+2025-07-29 16:05:46,979 - app - INFO - Requisição recebida: GET http://127.0.0.1:5000/manufacturers/4 de 127.0.0.1
+2025-07-29 16:05:46,979 - api_jatoba.manufacturers - INFO - Buscando fabricante com ID: 4.
+2025-07-29 16:05:46,983 - api_jatoba.database - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2025-07-29 16:05:46,985 - api_jatoba.manufacturers - INFO - Fabricante ID 4 encontrado: Nova Indústria.
+2025-07-29 16:05:46,985 - api_jatoba.database - INFO - Conexão ao banco de dados fechada com sucesso.
+2025-07-29 16:05:46,985 - app - INFO - Requisição finalizada: GET http://127.0.0.1:5000/manufacturers/4 com status 200
+2025-07-29 16:06:02,255 - app - INFO - Requisição recebida: DELETE http://127.0.0.1:5000/manufacturers/4 de 127.0.0.1
+2025-07-29 16:06:02,255 - api_jatoba.manufacturers - INFO - Tentando excluir fabricante ID: 4.
+2025-07-29 16:06:02,259 - api_jatoba.database - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2025-07-29 16:06:02,301 - api_jatoba.manufacturers - INFO - Fabricante ID 4 excluído com sucesso.
+2025-07-29 16:06:02,301 - api_jatoba.database - INFO - Conexão ao banco de dados fechada com sucesso.
+2025-07-29 16:06:02,302 - app - INFO - Requisição finalizada: DELETE http://127.0.0.1:5000/manufacturers/4 com status 200
+2025-07-29 16:06:20,408 - app - INFO - Requisição recebida: GET http://127.0.0.1:5000/equipments/ de 127.0.0.1
+2025-07-29 16:06:20,409 - api_jatoba.equipments - INFO - Iniciando listagem de equipamentos. Filtro por fabricante_id: Nenhum.
+2025-07-29 16:06:20,413 - api_jatoba.database - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2025-07-29 16:06:20,415 - api_jatoba.equipments - INFO - Listados 3 equipamentos.
+2025-07-29 16:06:20,416 - api_jatoba.database - INFO - Conexão ao banco de dados fechada com sucesso.
+2025-07-29 16:06:20,416 - app - INFO - Requisição finalizada: GET http://127.0.0.1:5000/equipments/ com status 200
+2025-07-29 16:07:05,827 - app - INFO - Requisição recebida: POST http://127.0.0.1:5000/equipments/ de 127.0.0.1
+2025-07-29 16:07:05,827 - api_jatoba.equipments - INFO - Tentando criar novo equipamento: Máquina XYZ (V3.0).
+2025-07-29 16:07:05,832 - api_jatoba.database - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2025-07-29 16:07:05,990 - api_jatoba.equipments - INFO - Equipamento 'Máquina XYZ (V3.0)' criado com sucesso, ID: 4.
+2025-07-29 16:07:05,990 - api_jatoba.database - INFO - Conexão ao banco de dados fechada com sucesso.
+2025-07-29 16:07:05,990 - app - INFO - Requisição finalizada: POST http://127.0.0.1:5000/equipments/ com status 201
+2025-07-29 16:07:12,077 - app - INFO - Requisição recebida: PUT http://127.0.0.1:5000/equipments/1 de 127.0.0.1
+2025-07-29 16:07:12,078 - api_jatoba.equipments - INFO - Tentando atualizar equipamento ID: 1.
+2025-07-29 16:07:12,082 - api_jatoba.database - INFO - Conexão ao banco de dados estabelecida com sucesso.
+2025-07-29 16:07:12,111 - api_jatoba.equipments - INFO - Equipamento ID 1 atualizado com sucesso.
+2025-07-29 16:07:12,111 - api_jatoba.database - INFO - Conexão ao banco de dados fechada com sucesso.
+2025-07-29 16:07:12,111 - app - INFO - Requisição finalizada: PUT http://127.0.0.1:5000/equipments/1 com status 200
+2025-07-29 16:21:41,772 - app - INFO - Requisição recebida: POST http://127.0.0.1:5000/files/ de 127.0.0.1
+2025-07-29 16:21:41,772 - api_jatoba.files - INFO - Iniciando upload de novo arquivo.
+2025-07-29 16:21:41,773 - api_jatoba.files - ERROR - Erro ao salvar o arquivo físico: name 'original_filename' is not defined
+Traceback (most recent call last):
+  File "/var/www/html/jatoba/routes/files.py", line 111, in upload_new_file
+    logger.info(f"Arquivo '{original_filename}' salvo em: {file_path_on_server}")
+                            ^^^^^^^^^^^^^^^^^
+NameError: name 'original_filename' is not defined
+2025-07-29 16:21:41,780 - app - INFO - Requisição finalizada: POST http://127.0.0.1:5000/files/ com status 500
+2025-07-29 16:22:29,561 - app - INFO - Requisição recebida: POST http://127.0.0.1:5000/files/ de 127.0.0.1
+2025-07-29 16:22:29,561 - api_jatoba.files - INFO - Iniciando upload de novo arquivo.
+2025-07-29 16:22:29,562 - api_jatoba.files - ERROR - Erro ao salvar o arquivo físico: name 'original_filename' is not defined
+Traceback (most recent call last):
+  File "/var/www/html/jatoba/routes/files.py", line 111, in upload_new_file
+    logger.info(f"Arquivo '{original_filename}' salvo em: {file_path_on_server}")
+                            ^^^^^^^^^^^^^^^^^
+NameError: name 'original_filename' is not defined
+2025-07-29 16:22:29,568 - app - INFO - Requisição finalizada: POST http://127.0.0.1:5000/files/ com status 500
