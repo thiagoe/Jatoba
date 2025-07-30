@@ -38,6 +38,7 @@ Siga estes passos para configurar e executar a API localmente.
 ```bash
 git clone [https://github.com/seu-usuario/api-jatoba.git](https://github.com/seu-usuario/api-jatoba.git) # Substitua pelo seu link do repositório
 cd api-jatoba
+```
 
 ## 2. Criar e Ativar o Ambiente Virtual
 É uma boa prática usar um ambiente virtual para gerenciar as dependências.
@@ -46,19 +47,20 @@ cd api-jatoba
 
 ''''python3 -m venv venv
 ''''source venv/bin/activate # No Linux/macOS
-# venv\Scripts\activate # No Windows
+''''venv\Scripts\activate # No Windows
 
-3. Instalar as Dependências
+# 3. Instalar as Dependências
 
-Bash
+```Bash
 
 '' pip install -r requirements.txt
-4. Configurar Variáveis de Ambiente
+```
+# 4. Configurar Variáveis de Ambiente
 Crie um arquivo .env na raiz do projeto e configure as variáveis de ambiente necessárias para a conexão com o banco de dados e a pasta de uploads.
 
 Exemplo de .env:
 
-'''
+```Bash
 
 DB_HOST=localhost
 DB_PORT=3306
@@ -67,6 +69,8 @@ DB_PASSWORD=sua_senha_db
 DB_NAME=api_jatoba_db
 UPLOAD_FOLDER=./uploads
 LOG_LEVEL=INFO
+```
+
 DB_HOST: Endereço do seu servidor de banco de dados.
 
 DB_PORT: Porta do seu banco de dados (geralmente 3306).
@@ -81,9 +85,10 @@ UPLOAD_FOLDER: Caminho para a pasta onde os arquivos serão armazenados.
 
 LOG_LEVEL: Nível de detalhe dos logs (DEBUG, INFO, WARNING, ERROR, CRITICAL).
 
-5. Configurar o Banco de Dados
+# 5. Configurar o Banco de Dados
 Crie o banco de dados e as tabelas necessárias. Você pode usar um cliente MySQL/MariaDB (como DBeaver, MySQL Workbench, ou o terminal mysql).
 
+``` Bash
 SQL
 
 CREATE DATABASE IF NOT EXISTS api_jatoba_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
@@ -133,10 +138,14 @@ CREATE TABLE IF NOT EXISTS arquivos (
 --     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 --     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 -- );
-6. Rodar a Aplicação Flask
-Bash
+
+```
+
+# 6. Rodar a Aplicação Flask
+``` Bash
 
 python app.py
+```
 A API estará rodando em http://127.0.0.1:5000.
 
 🖥️ Endpoints da API
