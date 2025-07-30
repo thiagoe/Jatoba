@@ -151,200 +151,201 @@ A API estará rodando em http://127.0.0.1:5000.
 🖥️ Endpoints da API
 Você pode testar os endpoints usando ferramentas como curl (terminal), Postman, Insomnia ou diretamente pelo navegador para requisições GET.
 
-Endpoints Gerais (/)
-GET /
+# Endpoints Gerais (/)
+### GET /
 
 Descrição: Verifica o status da API.
-
+```
 curl http://127.0.0.1:5000/
-
+```
 POST /upload
 
 Descrição: Faz o upload de um arquivo genérico para a pasta uploads.
-
+```
 curl -X POST -F "file=@/caminho/para/seu/arquivo.txt" http://127.0.0.1:5000/upload
-
+```
 DELETE /upload/<filename>
 
 Descrição: Deleta um arquivo genérico da pasta uploads.
-
+```
 curl -X DELETE http://127.0.0.1:5000/upload/nome_do_arquivo.txt
-
+```
 Endpoints de Fabricantes (/manufacturers)
 GET /manufacturers/
 
 Descrição: Lista todos os fabricantes.
-
+```
 curl http://127.0.0.1:5000/manufacturers/
-
+```
 GET /manufacturers/<id>
 
 Descrição: Obtém um fabricante pelo ID.
-
+```
 curl http://127.0.0.1:5000/manufacturers/1
-
+```
 POST /manufacturers/
 
-Descrição: Cria um novo fabricante.
-
+- Descrição: Cria um novo fabricante.
+```
 curl -X POST -H "Content-Type: application/json" -d '{"name": "Nova Indústria", "logo_url": "http://example.com/logo_nova.png"}' http://127.0.0.1:5000/manufacturers/
-
+```
 PUT /manufacturers/<id>
 
-Descrição: Atualiza um fabricante existente.
-
+- Descrição: Atualiza um fabricante existente.
+```
 curl -X PUT -H "Content-Type: application/json" -d '{"name": "Nova Indústria Atualizada", "logo_url": "http://example.com/logo_atualizada.png"}' http://127.0.0.1:5000/manufacturers/1
-
+```
 DELETE /manufacturers/<id>
 
 Descrição: Exclui um fabricante.
-
+```
 curl -X DELETE http://127.0.0.1:5000/manufacturers/1
-
+```
 POST /manufacturers/<id>/logo
 
 Descrição: Faz o upload de um logo para um fabricante.
-
+```
 curl -X POST -F "logo=@/caminho/para/seu/logo.png" http://127.0.0.1:5000/manufacturers/1/logo
-
+```
 Endpoints de Equipamentos (/equipments)
 GET /equipments/
 
 Descrição: Lista todos os equipamentos.
-
+```
 curl http://127.0.0.1:5000/equipments/
-
+```
 GET /equipments/?manufacturer_id=<id>
 
 Descrição: Lista equipamentos filtrados por ID de fabricante.
-
+```
 curl http://127.0.0.1:5000/equipments/?manufacturer_id=1
-
+```
 GET /equipments/<id>
 
 Descrição: Obtém um equipamento pelo ID.
-
+```
 curl http://127.0.0.1:5000/equipments/1
-
+```
 POST /equipments/
 
 Descrição: Cria um novo equipamento.
-
+```
 curl -X POST -H "Content-Type: application/json" -d '{"name": "Máquina XYZ", "model": "V3.0", "manufacturer_id": 1, "image_url": "http://example.com/equipamento_xyz.jpg"}' http://127.0.0.1:5000/equipments/
-
+```
 PUT /equipments/<id>
 
 Descrição: Atualiza um equipamento existente.
-
+```
 curl -X PUT -H "Content-Type: application/json" -d '{"name": "Máquina XYZ Pro", "model": "V3.1", "manufacturer_id": 1, "image_url": "http://example.com/equipamento_xyz_pro.jpg"}' http://127.0.0.1:5000/equipments/1
-
+```
 DELETE /equipments/<id>
 
 Descrição: Exclui um equipamento.
-
+```
 curl -X DELETE http://127.0.0.1:5000/equipments/1
-
+```
 POST /equipments/<id>/image
 
 Descrição: Faz o upload de uma imagem para um equipamento.
-
+```
 curl -X POST -F "image=@/caminho/para/sua/imagem.jpg" http://127.0.0.1:5000/equipments/1/image
-
+```
 Endpoints de Arquivos (/files)
 GET /files/
 
 Descrição: Lista todos os arquivos.
-
+```
 curl http://127.0.0.1:5000/files/
-
+```
 GET /files/?type=<type>
 
 Descrição: Lista arquivos filtrados por tipo (firmware ou document).
-
+```
 curl http://127.0.0.1:5000/files/?type=firmware
-
+```
 GET /files/?equipment_id=<id>
 
 Descrição: Lista arquivos filtrados por ID de equipamento.
-
+```
 curl http://127.0.0.1:5000/files/?equipment_id=1
-
+```
 GET /files/<id>
 
 Descrição: Obtém metadados de um arquivo pelo ID.
-
+```
 curl http://127.0.0.1:5000/files/1
-
+```
 POST /files/
 
 Descrição: Faz o upload de um novo arquivo e salva seus metadados.
-
+```
 curl -X POST -F "file=@/caminho/para/seu/firmware.bin" -F "name=Firmware v1.0" -F "type=firmware" -F "equipment_id=1" -F "uploaded_by=101" http://127.0.0.1:5000/files/
-
+```
 PUT /files/<id>
 
 Descrição: Atualiza os metadados de um arquivo existente.
-
+```
 curl -X PUT -H "Content-Type: application/json" -d '{"name": "Firmware v1.1 Atualizado", "type": "firmware"}' http://127.0.0.1:5000/files/1
-
+```
 DELETE /files/<id>
 
 Descrição: Exclui um arquivo (registro e físico).
-
+```
 curl -X DELETE http://127.0.0.1:5000/files/1
-
+```
 GET /files/<id>/download
 
 Descrição: Baixa um arquivo.
-
+```
 curl -O -J http://127.0.0.1:5000/files/1/download
-
+```
 POST /files/<id>/download
 
 Descrição: Incrementa o contador de downloads de um arquivo.
-
+```
 curl -X POST http://127.0.0.1:5000/files/1/download
-
+```
 Endpoints de Busca (/search)
 GET /search/?q=<query>
 
 Descrição: Realiza busca global em fabricantes e equipamentos.
-
+```
 curl http://127.0.0.1:5000/search/?q=termo
-
+```
 GET /search/manufacturers?q=<query>
 
 Descrição: Busca fabricantes pelo nome.
-
+```
 curl http://127.0.0.1:5000/search/manufacturers?q=termo
-
+```
 GET /search/equipments?q=<query>
 
 Descrição: Busca equipamentos pelo nome ou modelo.
-
+```
 curl http://127.0.0.1:5000/search/equipments?q=termo
-
+```
 Endpoints de Administração (/admin)
 GET /admin/stats
 
 Descrição: Obtém estatísticas gerais do sistema.
-
+```
 curl http://127.0.0.1:5000/admin/stats
-
+```
 GET /admin/users
 
 Descrição: (Placeholder) Lista usuários.
-
+```
 curl http://127.0.0.1:5000/admin/users
-
+```
 PUT /admin/users/<id>
 
 Descrição: (Placeholder) Atualiza um usuário.
-
+```
 curl -X PUT -H "Content-Type: application/json" -d '{"username": "novo_usuario"}' http://127.0.0.1:5000/admin/users/1
-
+```
 DELETE /admin/users/<id>
 
 Descrição: (Placeholder) Exclui um usuário.
-
+```
 curl -X DELETE http://127.0.0.1:5000/admin/users/1
+```
