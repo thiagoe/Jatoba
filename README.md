@@ -44,17 +44,24 @@ cd api-jatoba
 É uma boa prática usar um ambiente virtual para gerenciar as dependências.
 
 
-
-''''python3 -m venv venv
-''''source venv/bin/activate # No Linux/macOS
-''''venv\Scripts\activate # No Windows
+```Bash
+python3 -m venv venv
+```
+# No Linux/macOS
+```Bash
+source venv/bin/activate
+```
+ # No Window
+```Bash
+venv\Scripts\activate
+```
 
 # 3. Instalar as Dependências
 
 ```Bash
-
-'' pip install -r requirements.txt
+pip install -r requirements.txt
 ```
+
 # 4. Configurar Variáveis de Ambiente
 Crie um arquivo .env na raiz do projeto e configure as variáveis de ambiente necessárias para a conexão com o banco de dados e a pasta de uploads.
 
