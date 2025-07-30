@@ -35,16 +35,16 @@ Siga estes passos para configurar e executar a API localmente.
 
 ### 1. Clonar o Repositório
 
-```bash
-git clone [https://github.com/seu-usuario/api-jatoba.git](https://github.com/seu-usuario/api-jatoba.git) # Substitua pelo seu link do repositório
-cd api-jatoba
+
+'''git clone [https://github.com/seu-usuario/api-jatoba.git](https://github.com/seu-usuario/api-jatoba.git) # Substitua pelo seu link do repositório'''
+'''cd api-jatoba'''
 2. Criar e Ativar o Ambiente Virtual
 É uma boa prática usar um ambiente virtual para gerenciar as dependências.
 
-Bash
 
-''python3 -m venv venv
-''source venv/bin/activate # No Linux/macOS
+
+''''python3 -m venv venv
+''''source venv/bin/activate # No Linux/macOS
 # venv\Scripts\activate # No Windows
 
 3. Instalar as Dependências
